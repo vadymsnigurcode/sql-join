@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS Orders (
     OrderDate REAL
 );
 INSERT INTO Orders (CustomerID, OrderDate)
-VALUES (1, DateTime('now'));
+VALUES (1, DateTime('now')),
+(2, DateTime('now'));
 
 
 CREATE TABLE IF NOT EXISTS Customers (
@@ -21,5 +22,5 @@ CREATE TABLE IF NOT EXISTS Customers (
 );
 
 INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
-VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
-
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway'),
+('Alfreds Futterkiste',	'Maria Anders', 'Obere Str. 57', 'Berlin', '12209', 'Germany');
